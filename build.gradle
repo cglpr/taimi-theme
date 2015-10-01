@@ -38,7 +38,8 @@ buildscript {
 task deploy (dependsOn: war){
     copy {
         from "build/libs"
-        into "C:/dev/liferay-portal-6.2-ce-ga4/deploy"
+        //into "C:/dev/liferay-portal-6.2-ce-ga4/deploy"
+        into "D:/dev/liferay-portal-6.2-ce-ga4/deploy"
         include "*.war"
     }
 }
